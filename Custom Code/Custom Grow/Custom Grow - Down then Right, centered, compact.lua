@@ -2,16 +2,21 @@
 
 function(newPositions, activeRegions)
     
-    local max_width = 6 -- limit of icons per row
-    local max_height = 2 -- max number of rows
-    local border_size = 1 -- Outer border size set on icons (only used for calculations, will not change any existing borders)
+    -- ##### CONFIG #####
 
-    local spacing_x = 0
-    local spacing_y = 0
-    local icon_width = 50
-    local icon_height = 50
+    local max_width = 6         -- limit of icons per row
+    local max_height = 2        -- max number of rows
+
+    local border_size = 1       -- Outer border size set on icons (only used for calculations, will not change any existing borders)
+
+    local spacing_x = 0         -- enforce X pixels of spacing between icons, horizontally
+    local spacing_y = 0         -- enforce X pixels of spacing between icons, vertically
+    local icon_width = 50       -- enforce icon width
+    local icon_height = 50      -- enforce icon width
+
+
     
-    ----------------------
+    -- ##### SCRIPT #####
     
     local x = 0
     local y = 0
